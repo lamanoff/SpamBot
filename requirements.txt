@@ -12,7 +12,6 @@ speedtest-cli
 coffeehouse==2.2.4
 regex
 bleach
-git+https://github.com/starry69/python-markdown2.git
 telethon==1.16.4
 heroku3
 alphabet_detector
