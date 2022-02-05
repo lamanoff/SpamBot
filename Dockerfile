@@ -3,8 +3,13 @@ FROM python:3.10.1-slim-buster
 
 RUN apt-get update -y && apt-get upgrade -y 
 RUN pip3 install --upgrade pip setuptools
+RUN apt-get install git -y
 
 # Docker work bsdk
+
+COPY requirements.txt requirements.txt
+
+COPY . .
 
 RUN git clone https://github.com/Gladiators-Projects/spambot /root/spambot
 
